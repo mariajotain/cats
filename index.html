@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Котики</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width">
+    <script defer src="main.js"></script>
+</head>
+<body>
+  
+    <header>
+        <a href="" class="logo">
+            <i class="fa-solid fa-cat"></i>
+        </a>
+ 
+        <button data-open_modal class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Добавить</button>
+    </header>
+    <div class="container">
+        <div data-wr class="d-flex">
+          
+        </div>
+        
+    </div>
+    <footer>
+      <div>
+          <i class="bi bi-c-circle"></i><span>2022 Pretty Cats</span>
+      </div>
+     
+  </footer>
+    
+<div data-modals_wr class="modal-wr hidden">
+    <div class="d-flex justify-content-center custom-modal">
+        
+    <form name="add_cat">
+        <button data-close_modal type="button" class="btn-close" aria-label="Close" name="add_cat"></button>
+            <h3 class="modal-title">Добавить нового котика</h3>
+           
+        <div class="mb-3">
+          <input 
+          placeholder="Id"
+          name="id"
+          type="number" 
+          class="form-control" 
+          id="exampleInputEmail1" 
+          aria-describedby="emailHelp"
+          required
+          title="Введите число" 
+          >
+        </div>
+        <div class="mb-3">
+            <input 
+            placeholder="Name"
+            name="name"
+            type="text" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp"
+            required
+            >
+          </div>
+          <div class="mb-3">
+            <input 
+            placeholder="Rate"
+            name="rate"
+            type="number" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp"
+            title="Введите число от 1 до 10" pattern="[1-10]">
+          </div>
+          <div class="mb-3">
+            <input 
+            placeholder="Age"
+            name="age"
+            type="number" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp"
+            title="Введите число" >
+          </div>
+          <div class="mb-3">
+            <input 
+            placeholder="Description"
+            name="description"
+            type="text" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3 form-check">
+            <input 
+            type="checkbox" 
+            class="form-check-input" 
+            id="exampleCheck1"
+            name="favourite"
+            >
+            <label for="scales">favourite</label>
+          </div>
+          <div class="mb-3">
+            <input 
+            placeholder="Pic link"
+            name="img_link"
+            type="text" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp">
+          </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </div>
+</div>
+
+<div data-modals_sh class="modal-wr hidden">
+  <div data-modal_show_card class="d-flex justify-content-center custom-modal">
+    <button data-close_show_btn type="button" class="btn-close" aria-label="Close"></button>
+    <form name="edit_cat">
+      <h3 class="modal-title">Изменить котика</h3>
+    <div class="mb-3">
+      <input 
+      placeholder="Rate"
+      name="rate"
+      type="number" 
+      class="form-control" 
+      id="exampleInputEmail1" 
+      aria-describedby="emailHelp"
+      title="Введите число от 1 до 10" pattern="[1-10]">
+    </div>
+    <div class="mb-3">
+      <input 
+      placeholder="Age"
+      name="age"
+      type="number" 
+      class="form-control" 
+      id="exampleInputEmail1" 
+      aria-describedby="emailHelp"
+      >
+    </div>
+    <div class="mb-3">
+      <input 
+      placeholder="Description"
+      name="description"
+      type="text" 
+      class="form-control" 
+      id="exampleInputEmail1" 
+      aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3 form-check">
+      <input
+      type="checkbox" 
+      class="form-check-input" 
+      id="exampleCheck1"
+      name="favourite"
+      >
+      <label for="scales">favourite</label>
+    </div>
+    <div class="mb-3">
+      <input 
+      placeholder="Pic link"
+      name="img_link"
+      type="text" 
+      class="form-control" 
+      id="exampleInputEmail1" 
+      aria-describedby="emailHelp">
+    </div>
+  <button data-action="edit" type="submit" class="btn btn-primary">Изменить</button>
+    </form>
+   
+  </div>
+</div>
+
+</body>
+</html>
+

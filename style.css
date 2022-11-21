@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background: linear-gradient(90deg, #b9deed, #efefef);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+.container {
+    margin: auto;
+    width: 1000px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px calc(50% - 500px);
+    box-shadow: 0px 0px 3px 0px gray;
+    background: white;
+    
+}
+.logo i {
+    font-style: normal;
+    font-size: 40px;
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    align-content: flex-start;
+
+}
+.btn_flex {
+display: flex;
+flex-direction: column;
+/* flex-wrap: wrap; */
+/* align-items:center; */
+gap: 10px;
+}
+footer {
+    display: flex;
+    padding: 20px calc(50% - 500px);
+    box-shadow: 0px 0px 3px 0px gray;
+    background: white;
+    justify-content: center;
+}
+
+.modal-wr {
+    /* height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    */
+    display: flex; 
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh; 
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .custom-modal {
+    background: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.modal-title {
+    padding-bottom: 30px;
+}
+.hidden {
+    display: none;
+}
+/* Кнопка закрытия модального окна */
+.btn-close {
+    position: relative;
+    left: 100%;
+   }
+
