@@ -125,7 +125,7 @@ async editOneCat(catId, data) {
 }
 
 // Обращаемся к АПИ
-const api = new API("http://sb-cats.herokuapp.com/api/2/mariajotain");
+const api = new API("https://sb-cats.herokuapp.com/api/2/mariajotain");
 
 // Генерируем карточки на странице
 
